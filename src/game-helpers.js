@@ -53,3 +53,5 @@ export function checkGuess(guess, answer) {
 
   return result;
 }
+
+export default checkGuess;
