@@ -3,7 +3,6 @@ import {checkGuess} from '../../game-helpers';
 
 function Guess({ thisGuess, answer }) {
   let result = checkGuess(thisGuess?.label, answer);
-
   result = result || range(5).map(() => ({ letter: '', status: '' }));
 
   return (

@@ -50,7 +50,7 @@ function Game() {
       />
     ))}
     <GuessInput handleSubmit={handleSubmit} gameOver={gameOver || gameWon} />
-    <Keyboard />
+    <Keyboard listGuesses={{ listGuesses }} answer={answer} />
     {gameOver && !gameWon &&
       <div className="sad banner">
         <p>Sorry, the correct answer is <strong>{answer}</strong>.</p>
